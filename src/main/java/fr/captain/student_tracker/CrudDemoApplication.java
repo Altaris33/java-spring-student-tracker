@@ -1,7 +1,7 @@
-package fr.captain.crud_demo;
+package fr.captain.student_tracker;
 
-import fr.captain.crud_demo.dao.StudentDAO;
-import fr.captain.crud_demo.entity.Student;
+import fr.captain.student_tracker.dao.StudentDAO;
+import fr.captain.student_tracker.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

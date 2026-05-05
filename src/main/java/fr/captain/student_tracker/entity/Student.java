@@ -1,4 +1,4 @@
-package fr.captain.crud_demo.entity;
+package fr.captain.student_tracker.entity;
 
 import jakarta.persistence.*;
 

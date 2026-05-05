@@ -1,6 +1,6 @@
-package fr.captain.crud_demo.dao;
+package fr.captain.student_tracker.dao;
 
-import fr.captain.crud_demo.entity.Student;
+import fr.captain.student_tracker.entity.Student;
 
 import java.util.List;
 
