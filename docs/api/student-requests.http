@@ -1,0 +1,12 @@
+### Create a student
+POST http://localhost:7070/students
+Content-Type: application/json
+
+{
+  "firstName": "Rean",
+  "lastName": "Scharzer",
+  "email": "rean.scharzer@thors.com"
+}
+
+### Get all students
+GET http://localhost:7070/students

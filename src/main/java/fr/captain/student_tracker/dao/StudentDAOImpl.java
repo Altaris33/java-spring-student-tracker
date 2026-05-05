@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public class StudentDAOImpl implements StudentDAO{
 
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
 
     @Autowired
     public StudentDAOImpl(EntityManager entityManager) {
@@ -21,8 +21,13 @@ public class StudentDAOImpl implements StudentDAO{
 
     @Override
     @Transactional
-    public void save(Student student) {
-        this.entityManager.persist(student);
+    public Student save(Student student) {
+        if (student.getId() == null) {
+            this.entityManager.persist(student);
+            return student;
+        } else {
+            return this.entityManager.merge(student);
+        }
     }
 
     @Override
